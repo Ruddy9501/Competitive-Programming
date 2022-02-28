@@ -1,0 +1,113 @@
+/*
+RUDDY
+MIERDA -> NO ME DA EL ULTIMO JUEGO DE DATOS
+usaco2005]enero]oro
+
+*/
+#include <queue>
+#include <cstdio>
+#include <algorithm>
+
+using namespace std;
+
+int fil, col, F, C, r, c, newf, newc;
+long long A[305][305], m, sol;
+bool M[305][305], M2[305][305], M3[305][305];
+typedef pair <int, int>par;
+queue <par>Q;
+
+const int mf[8] = {0, 0,1,-1},
+          mc[8] = {1,-1,0, 0};
+
+struct tres{
+       long long alt;
+       int fil, col;
+       tres (long long a = 0, int b = 0, int c = 0){
+             alt = a;
+             fil = b;
+             col = c;
+       }
+       bool operator <(const tres &R)
+       const{
+             return R.alt > alt;
+       }
+}B[100000];
+
+int main(){
+
+   // freopen ("juice.in", "r", stdin);
+   // freopen ("juice.out", "w", stdout);
+
+    scanf ("%d %d", &F, &C);
+
+    for (int i = 1; i <= C; i++){
+         for (int j = 1; j <= F; j++){
+              scanf ("%lld", &A[i][j]);
+              B[++c].alt = A[i][j];
+              B[c].fil = i;
+              B[c].col = j;
+         }
+    }
+
+    sort (B + 1, B + F*C + 1);
+    for (int i = 1;i <= max(F,C); i++){
+         M3[1][i] = M3[i][1] = M3[C][i] = M3[i][F] = true;
+    }
+
+
+    for (int i = 1; i <= F*C; i++){
+         if (M2[B[i].fil][B[i].col] == true)
+             continue;
+         if (M3[B[i].fil][B[i].col] == true)
+             continue;
+         Q.push(par(B[i].fil,B[i].col));
+         m = 1 << 30;
+         r++;
+         while (!Q.empty()){
+                fil = Q.front().first;
+                col = Q.front().second;
+                M[fil][col] = true;
+                Q.pop();
+                M2[fil][col] = true;
+                for (int j = 0; j < 4; j++){
+                     newf = fil + mf[j];
+                     newc = col + mc[j];
+                     if (A[newf][newc] < m && A[newf][newc] != B[i].alt)
+                         m = A[newf][newc];
+                     if (M3[newf][newc] == true){
+                         if (A[newf][newc] < m)
+                             m = A[newf][newc];
+                         continue;
+                     }
+                         if (A[newf][newc] == B[i].alt && M[newf][newc] == false){
+                             Q.push(par(newf, newc));
+                             M[newf][newc] = true;
+                         }
+                }
+         }
+
+         Q.push(par(B[i].fil,B[i].col));
+         M[B[i].fil][B[i].col] = false;
+         while (!Q.empty()){
+                fil = Q.front().first;
+                col = Q.front().second;
+                if (m > B[i].alt && m != 1 << 30)
+                    sol += (m - A[fil][col]);
+                A[fil][col] = m;
+                Q.pop();
+                for (int j = 0; j < 4; j++){
+                     newf = fil + mf[j];
+                     newc = col + mc[j];
+                     if (M3[newf][newc] != true)
+                     if (A[newf][newc] == B[i].alt && M[newf][newc] == true){
+                         Q.push(par(newf,newc));
+                         M[newf][newc] = false;
+                     }
+                }
+         }
+    }
+
+    printf ("%lld\n", sol);
+
+    return 0;
+}
