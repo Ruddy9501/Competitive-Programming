@@ -1,10 +1,6 @@
 /*
 Ruddy Guerrero Alvarez
-Caibarien -- Villa Clara
-PSN 2012/ 2da Prueba Final/ 
-Acuario/ acuari ->->->-> este ejerc icio es una mierda los juegos de datos
-son una mierda.
- 
+PSN 2012
 */
 #include <cstdio>
 #include <algorithm>
