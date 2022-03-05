@@ -1,7 +1,6 @@
 /*
-VC1 -> Ruddy Guerrero Alvarez
+Ruddy Guerrero Alvarez
 Provincial - 2012-2013
-IPVCE "Ernesto Guevara"
 12mo
 */
 #include <cstdio>
