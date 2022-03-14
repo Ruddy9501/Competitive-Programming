@@ -1,0 +1,81 @@
+\documentclass[letter]{amsart}
+\usepackage[pdftex]{geometry}
+\usepackage[utf8]{inputenc}
+
+\usepackage{listings}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{courier}
+\usepackage{fancyhdr}
+
+\lstset{language=C++}
+\lstset{columns=fullflexible}
+\lstset{basicstyle=\scriptsize\ttfamily}
+\lstset{showspaces=false}
+
+\geometry{landscape}
+\setlength{\topmargin}{-0.25in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\columnsep}{1in}
+\setlength{\columnseprule}{0.2pt}
+\textwidth 9.5in
+
+\pagestyle{fancy}
+\lhead{ UCLV: KFP, ACM-ICPC 2015 }
+\chead{}
+\rhead{\thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+
+\newcommand{\includecpp}[3]{
+  \begin{multicols}{2}
+    [\subsection{#1}\ ]
+    \lstinputlisting[language=c++]{#2/#3}
+  \end{multicols}
+}
+
+\begin{document}
+  \thispagestyle{fancy}
+  \begin{center}
+    \Huge\textsc{Team Reference \\ Universidad Central de las Villas : KFP}
+  \end{center}
+  
+  \begin{center}
+    \textbf{Miembros del Equipo:} Rafael Fernández Morera, Ruddy Guerrero Alvarez\\
+  \end{center}  
+
+  \begin{multicols}{2}
+    \tableofcontents
+  \end{multicols}
+
+  
+  
+  \enlargethispage*{\baselineskip}
+  \pagebreak
+
+  \section{Estructura de Datos}
+
+  	
+    \includecpp {Arbol Binario Indexado}{./Estructura de Datos}{Arbol_Binario_Indexado.cpp}
+    \includecpp {Segment Tree}{./Estructura de Datos}{Segment Tree.cpp}
+    \includecpp {Range Min-Max Quering}{./Estructura de Datos}{Range Min-Max Quering.cpp}
+    \includecpp {Lowest Comon Antecesor}{./Estructura de Datos}{Lowest Comon Antecesor.cpp}
+    \includecpp {Heavy Ligth Descomposition+Segmente Tree+Lowest Common Antecesor}{./Estructura de Datos}{Heavy Ligth Descomposition+Segmente Tree+Lowest Common Antecesor.cpp}
+    \includecpp {Centroid Descomposition+Lowest Common Antecesor}{./Estructura de Datos}{Centroid Descomposition+Lowest Common Antecesor.cpp}
+    \includecpp {Trie}{./Estructura de Datos}{Trie.cpp}
+
+    
+
+  %~ \section{}
+  
+  
+  
+  %~ \enlargethispage*{\baselineskip}
+  %~ \pagebreak
+
+  
+
+\end{document}
