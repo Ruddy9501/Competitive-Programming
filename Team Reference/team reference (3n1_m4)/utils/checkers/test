@@ -1,0 +1,11 @@
+#!/bin/bash
+targ=$1
+if (( $# == 0 ))
+then  targ=a
+fi
+rm "$targ";make "$targ"
+for f in in*
+do
+  echo "===== TEST: $f ====="
+  ./"$targ" < "$f"
+done
