@@ -1,0 +1,21 @@
+#!/bin/bash
+targ=$1;tester=$2
+if (( $# == 0 ))
+then  targ=a;tester=model
+fi
+rm "$targ";rm "$tester"
+make "$targ";make "$tester"
+for f in in*
+do
+  echo "===== TEST: $f ====="
+#  echo "OUTPUT:"
+  ./"$targ" < "$f" > "tmp1"
+#  echo "ANSWER::"
+  ./"$tester" < "$f" > "tmp2"
+
+  if cmp "tmp1" "tmp2"
+  then echo OK;ok=$((ok+1))
+  else echo WA;wa=$((wa+1))
+  fi
+done
+echo "OK: $ok WA: $wa"

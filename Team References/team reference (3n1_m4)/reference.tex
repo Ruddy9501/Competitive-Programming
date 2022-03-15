@@ -1,0 +1,200 @@
+\documentclass[letter]{amsart}
+\usepackage[pdftex]{geometry}
+\usepackage[utf8]{inputenc}
+
+\usepackage{listings}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{courier}
+\usepackage{fancyhdr}
+
+\lstset{language=C++}
+\lstset{columns=fullflexible}
+\lstset{basicstyle=\scriptsize\ttfamily}
+\lstset{showspaces=false}
+
+\geometry{landscape}
+\setlength{\topmargin}{-0.25in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\columnsep}{1in}
+\setlength{\columnseprule}{0.2pt}
+\textwidth 9.5in
+
+\pagestyle{fancy}
+\lhead{ UCLV: 3N1?M4, ACM-ICPC 2018 }
+\chead{}
+\rhead{\thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+
+\newcommand{\includecpp}[3]{
+  \begin{multicols}{2}
+    [\subsection{#1}\ ]
+    \lstinputlisting[language=c++]{#2/#3}
+  \end{multicols}
+}
+
+\newcommand{\includejava}[3]{
+  \begin{multicols}{2}
+    [\subsection{#1}\ ]
+    \lstinputlisting[language=Java]{#2/#3}
+  \end{multicols}
+}
+
+\newcommand{\includebash}[3]{
+  \begin{multicols}{2}
+    [\subsection{#1}\ ]
+    \lstinputlisting[language=bash]{#2/#3}
+  \end{multicols}
+}
+
+\newcommand{\includemake}[3]{
+  \begin{multicols}{2}
+    [\subsection{#1}\ ]
+    \lstinputlisting[language=make]{#2/#3}
+  \end{multicols}
+}
+
+\newcommand{\stirlingfirst}[2]{\genfrac{[}{]}{0pt}{}{#1}{#2}}
+\newcommand{\stirlingsecond}[2]{\genfrac{\{}{\}}{0pt}{}{#1}{#2}}
+\newcommand{\norm}[1]{\lVert#1\rVert}
+
+\begin{document}
+  \thispagestyle{fancy}
+  \begin{center}
+    \Huge\textsc{Team Reference \\ Universidad Central de las Villas : 3N1?M4 }
+  \end{center}
+  
+  \begin{center}
+    \textbf{Miembros del Equipo:} Alejandro Jim\'enez Fabi\'an, Ruddy Guerrero \'Alvarez, Luis Enrique Gonzales Saborit\\
+    \textbf{* Significa:} Soluci\'on a un Problema\\
+  \end{center}  
+
+  \begin{multicols}{2}
+    \tableofcontents
+  \end{multicols}
+
+  
+
+  \enlargethispage*{\baselineskip}
+  \pagebreak
+
+  \section{Utils}
+    \includecpp {C++ Template}{./utils/c++}{a.cpp}
+    \includejava {Java Fast Input}{./utils/java}{InputReader.java}
+    \includecpp {Test Input Generator}{./utils/checkers}{gen.cpp}
+    \includemake {Makefile}{./utils/checkers}{makefile}
+    \includebash {Sample Input Tester}{./utils/checkers}{test}
+    \includebash {Tester against Correct Solution}{./utils/checkers}{tester}
+  
+  
+  
+  \enlargethispage*{\baselineskip}
+  \pagebreak
+
+  \section{Data Structures}
+    \includecpp {Kd-Tree*}{./Data_Structures/Kd_Tree}{kdTree_tested.cpp}
+    \includecpp {Vantage Point Tree* -1}{./Data_Structures/Kd_Tree}{Vantage_Point_Tree_testeado.cc}
+    \includecpp {Vantage Point Tree* -2}{./Data_Structures/Kd_Tree}{vpt_testeado.cpp}
+    
+    \includecpp {Persistent Segment Tree}{./Data_Structures/Persistent_Segment_Tree}{PersistentSegmentTree_testeado.cpp}
+    
+    \includecpp {Implicit indexes Cartesian Tree* -1}{./Data_Structures/Treap}{itreap1_tested.cpp}
+    \includecpp {Implicit indexes Cartesian Tree* -2}{./Data_Structures/Treap}{itreap_tested.cpp}
+    \includecpp {Presistent Treap*}{./Data_Structures/Treap}{persistentTreap_testeado.cpp}
+    \includecpp {Treap Pintar*}{./Data_Structures/Treap}{treapPintar_testeado.cc}
+    \includecpp {Treap (Explicit)*}{./Data_Structures/Treap}{treap_tested.cpp}
+    
+    \includecpp {Trie}{./Data_Structures/Trie}{trie_tested.cpp}
+    \includecpp {Trie*}{./Data_Structures/Trie/exercises}{476E.cpp}
+    \includecpp {Trie MinMax Xor}{./Data_Structures/Trie}{trie_xor_min_max_tested.cpp}
+    \includecpp {Trie MinMax Xor*}{./Data_Structures/Trie/exercises}{470D.cpp}
+    
+    \includecpp {Union Find (+rollback)}{./Data_Structures/Union_Find}{unionfind+rollback-tested.cpp}
+    \includecpp {Union Find (+rollback)*}{./Data_Structures/Union_Find/exercisies}{CODF446E.cpp}
+    
+    \includecpp {Hashed String}{./Data_Structures}{HashedString_testeado.cpp}
+    \includecpp {HLD+SegmentTreeMin*}{./Data_Structures}{HLD+SegmentTreeMin_tested.cpp}
+    \includecpp {Order Statistics}{./Data_Structures}{Order_Statistics.cpp}
+    \includecpp {RMQ*}{./Data_Structures}{rmq_testeado.cpp}
+    
+    
+
+  \enlargethispage*{\baselineskip}
+  \pagebreak
+  
+  \section{String}
+    \includecpp {KMP (Generic)}{./String}{kmp_tested.cpp}
+    
+    \includecpp {Aho-Corasick (punteros)}{./String/Aho-Corasick}{Aho-Corasick_(punteros)_-_testeado.cpp}
+    \includecpp {Aho-Corasick (sin punteros)}{./String/Aho-Corasick}{Aho-Corasick_(sin_punteros)_-_testeado.cpp}
+    \includecpp {Aho-Corasick* -1}{./String/Aho-Corasick/exercises}{La_fabrica_-_matcom.cpp}
+    \includecpp {Aho-Corasick* -2}{./String/Aho-Corasick/exercises}{Palabras_prohibidas_III_-_matcom.cpp}
+    \includecpp {Aho-Corasick* -3}{./String/Aho-Corasick/exercises}{Palabras_prohibidas_-_matcom.cpp}
+    
+    \includecpp {Suffix Array}{./String/SuffixArray}{SuffixArray.cpp}
+    \includecpp {Suffix Array* -1}{./String/SuffixArray/exercises}{3931_Contact_Search.cpp}
+    \includecpp {Suffix Array* -2}{./String/SuffixArray/exercises}{CHSTR.cpp}
+    \includecpp {Suffix Array* -3}{./String/SuffixArray/exercises}{INSQ16F.cpp}
+    \includecpp {Suffix Array* -4}{./String/SuffixArray/exercises}{SSTORY.cpp}
+  
+  
+  \enlargethispage*{\baselineskip}
+  \pagebreak
+  
+  
+  
+  \section{Convolution}
+    \includecpp {Mobius All}{./Convolution}{mobius_all.cpp}
+    \includecpp {Transformadas Xor, And}{./Convolution}{transformadas_xor_and_testeado.cpp}
+    \includecpp {Mobius All*}{./Convolution/exercises}{458G.cpp}
+
+  
+  \enlargethispage*{\baselineskip}
+  \pagebreak
+
+  \section{Geometry}
+    \includecpp {Convex Hull (hashed)}{./Geometry}{ConvexHull_ale_testeado.cpp}
+    \includecpp {Convex Hull}{./Geometry}{ConvexHull_ruddy_testeado.cpp}
+    \includecpp {AntipodalPairOfPoints}{./Geometry}{AntipodalPairOfPoints_testeado.cpp}
+    \includecpp {ClosestPairOfPoints}{./Geometry}{ClosestPairOfPoints_testeado.cpp}
+    \includecpp {Geometr\'ia Programing Contest}{./Geometry}{geometria_Programing_contest_testeado.cpp}
+    \includecpp {Stanford}{./Geometry}{GeometryStanford_testeado.cpp}
+    \includecpp {Pair of Intersecting Line Segments}{./Geometry/Geometria-emaxx}{Find_a_pair_of_intersecting_line_segments.cpp}
+    \includecpp {Two Circles Common Tagents}{./Geometry/Geometria-emaxx}{Finding_common_tangents_to_two_circles.cpp}
+    \includecpp {Area of Union of Triangles}{./Geometry/Geometria-emaxx}{Finding_the_area_of_the_Union_of_triangles.cpp}
+    \includecpp {Inscribed Circle of Convex Polygon}{./Geometry/Geometria-emaxx}{Finding_the_inscribed_circle_of_the_convex_polygon.cpp}
+    \includecpp {Inscribed Circle of Convex Polygon (using ternary search)}{./Geometry/Geometria-emaxx}{Finding_the_inscribed_circle_of_the_convex_polygon_using_ternary_search.cpp}
+    \includecpp {Test Points Belonging to Convex Polygon}{./Geometry/Geometria-emaxx}{test_point_belongs_to_a_convex_polygon.cpp}
+    \includecpp {+ Geometry}{./Geometry/}{Geometry_testeado.cpp}
+  
+  
+  \enlargethispage*{\baselineskip}
+  \pagebreak
+
+  
+  \section{Graphs}
+    \includecpp {Centroid Decomposition}{./Graphs}{centroid.cpp}
+    \includecpp {Strongly Connected Components}{./Graphs}{scc.cpp}
+    \includecpp {Smaller to Large Technique* (Trees)}{./Graphs}{smallerToLarge.cpp}
+    \includecpp {Dijkstra}{./Graphs}{dijkstra.cpp}
+    \includecpp {Lowest Common Ancestor (lca)}{./Graphs}{lca.cpp}
+  
+  
+  
+  \enlargethispage*{\baselineskip}
+  \pagebreak
+
+  %~ \section{}
+  
+  
+  
+  %~ \enlargethispage*{\baselineskip}
+  %~ \pagebreak
+
+  
+
+\end{document}
