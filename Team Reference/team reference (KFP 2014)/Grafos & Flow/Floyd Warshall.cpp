@@ -16,14 +16,14 @@ int main(){
 	}
 
 	for(k = 1; k <= cn; k++)
-		for(i = 1; i <= cn; i++)
-			if(map[i][k] > 0){
-				for(j = 1; j <= cn; j++){
-					if(map[k][j] == 0)
-						continue;
-					if(map[i][j] == 0 || map[i][j] > map[i][k]+map[k][j])                        
-					   map[i][j] = map[i][k]+map[k][j];
-				}
+	for(i = 1; i <= cn; i++)
+		if(map[i][k] > 0){
+		   for(j = 1; j <= cn; j++){
+			   if(map[k][j] == 0)
+				  continue;
+			   if(map[i][j] == 0 || map[i][j] > map[i][k]+map[k][j])                        
+				  map[i][j] = map[i][k]+map[k][j];
+			}
 			}
 
 	for(i = 1; i <= cn; i++){
