@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  21 MAR 2022 22:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  21 MAR 2022 23:02
 entering extended mode
 **./reference.tex
 (reference.tex
@@ -616,7 +616,8 @@ Package fancyhdr Warning: \headheight is too small (8.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.0pt}.
 
-[24])
+[24]) (String Algorithms/Palindromes 1.cpp)
+(String Algorithms/Knutt Morris Pratt (Prefix Function).cpp
 
 Package fancyhdr Warning: \headheight is too small (8.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -625,12 +626,52 @@ Package fancyhdr Warning: \headheight is too small (8.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.0pt}.
 
-[25] (reference.aux) ) 
+[25]) (String Algorithms/Z Function.cpp
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...a posicion de Z[i] esta guardado el tamaño
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+) (String Algorithms/Cyclic Shift.cpp
+
+Package fancyhdr Warning: \headheight is too small (8.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-4.0pt}.
+
+[26]) (String Algorithms/Hashing.cpp
+Overfull \hbox (24.65211pt too wide) in paragraph at lines 65--66
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][] 
+ []
+
+)
+
+Package fancyhdr Warning: \headheight is too small (8.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-4.0pt}.
+
+[27] (reference.aux) ) 
 Here is how much of TeX's memory you used:
- 5447 strings out of 479334
- 75845 string characters out of 2857084
+ 5508 strings out of 479334
+ 77445 string characters out of 2857084
  644434 words of memory out of 3000000
- 22619 multiletter control sequences out of 15000+200000
+ 22663 multiletter control sequences out of 15000+200000
  410031 words of font info for 52 fonts, out of 3000000 for 9000
  1302 hyphenation exceptions out of 8191
  82i,11n,88p,285b,1942s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -642,9 +683,9 @@ eX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ruddy/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/Ruddy/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Ruddy/AppData/Local/P
 rograms/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on reference.pdf (25 pages, 150747 bytes).
+Output written on reference.pdf (27 pages, 159656 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
+ 114 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
