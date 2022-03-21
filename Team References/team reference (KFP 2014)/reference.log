@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  21 MAR 2022 22:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  21 MAR 2022 22:54
 entering extended mode
 **./reference.tex
 (reference.tex
@@ -495,7 +495,7 @@ Package fancyhdr Warning: \headheight is too small (8.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.0pt}.
 
-[15])
+[15]) (Geometry & Math/Estructuras Geometricas.cpp
 
 Package fancyhdr Warning: \headheight is too small (8.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -504,12 +504,133 @@ Package fancyhdr Warning: \headheight is too small (8.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.0pt}.
 
-[16] (reference.aux) ) 
+[16]
+Overfull \hbox (201.05183pt too wide) in paragraph at lines 139--140
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (8.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-4.0pt}.
+
+[17]) (Geometry & Math/Convex Hull.cpp
+Overfull \hbox (26.75215pt too wide) in paragraph at lines 60--61
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][] 
+ []
+
+) (Geometry & Math/Closest Pair of Points.cpp
+
+Package fancyhdr Warning: \headheight is too small (8.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-4.0pt}.
+
+[18]) (Geometry & Math/GCD – LCM – Extended GCD.cpp)
+Overfull \vbox (5.99538pt too high) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (8.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-4.0pt}.
+
+[19] (Geometry & Math/Area de Union+Multi Set.cpp)
+
+Package fancyhdr Warning: \headheight is too small (8.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-4.0pt}.
+
+[20] (Geometry & Math/Area de Union+Segment Tree.cpp)
+(Geometry & Math/Factorizacion.cpp
+
+Package fancyhdr Warning: \headheight is too small (8.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-4.0pt}.
+
+[21]
+Overfull \hbox (45.65195pt too wide) in paragraph at lines 78--79
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (8.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-4.0pt}.
+
+[22]) (Geometry & Math/Metodo de Gauss.cpp)
+(Geometry & Math/Fibonacci Logaritmico.cpp
+Overfull \hbox (62.45193pt too wide) in paragraph at lines 16--17
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (62.45193pt too wide) in paragraph at lines 17--18
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (62.45193pt too wide) in paragraph at lines 18--19
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (62.45193pt too wide) in paragraph at lines 19--20
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (8.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-4.0pt}.
+
+[23]) (Geometry & Math/Binary Exponetation.cpp)
+(Geometry & Math/Factorial Compactado.cpp
+
+Package fancyhdr Warning: \headheight is too small (8.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-4.0pt}.
+
+[24])
+
+Package fancyhdr Warning: \headheight is too small (8.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-4.0pt}.
+
+[25] (reference.aux) ) 
 Here is how much of TeX's memory you used:
- 5232 strings out of 479334
- 71480 string characters out of 2857084
+ 5447 strings out of 479334
+ 75845 string characters out of 2857084
  644434 words of memory out of 3000000
- 22439 multiletter control sequences out of 15000+200000
+ 22619 multiletter control sequences out of 15000+200000
  410031 words of font info for 52 fonts, out of 3000000 for 9000
  1302 hyphenation exceptions out of 8191
  82i,11n,88p,285b,1942s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -521,9 +642,9 @@ eX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ruddy/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/Ruddy/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Ruddy/AppData/Local/P
 rograms/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on reference.pdf (16 pages, 127836 bytes).
+Output written on reference.pdf (25 pages, 150747 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
+ 108 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
