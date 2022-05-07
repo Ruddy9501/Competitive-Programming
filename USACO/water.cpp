@@ -1,10 +1,7 @@
 /*
 Ruddy Guerrero Alvarez
-12mo
-Villa Clara -> Caibarien
 USACO/2008-2009/octubre/bronce
 Pozos de Agua/water
-greedis
 */
 #include <queue>
 #include <cstdio>
