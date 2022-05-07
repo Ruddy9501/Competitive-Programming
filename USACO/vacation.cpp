@@ -3,9 +3,7 @@ Ruddy Guerrero Alvarez
 Villa Clara -> Caibarien
 USACO/Problems/2010-11/November/Problems/Gold
 Visitando Vacas/vacation
-DFS/divide y venceras 
-Muy buen ejercicio para dar ideas de como resolver
-este tipo de probremas un estado depende de otro
+DFS/divide y venceras
 */
 #include <cstdio>
 #include <vector>
