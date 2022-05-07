@@ -1,9 +1,7 @@
 /*
 Ruddy Guerrero Alvarez
-Villa Clara -> Caibarien
 USACO/2013-2014/septiembre/oro
-Planeación de Vacaciones/vacationgold
-dijkstra
+PlaneaciÃ³n de Vacaciones/vacationgold
 */
 #include <queue>
 #include <cstdio>
