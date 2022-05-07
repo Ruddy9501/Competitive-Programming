@@ -1,6 +1,5 @@
 /*
 Ruddy Guerrero Alvarez
-Villa Clara -> Caibarien
 USACO/Problems/2010-11/November/Problems/Gold
 Visitando Vacas/vacation
 DFS/divide y venceras
